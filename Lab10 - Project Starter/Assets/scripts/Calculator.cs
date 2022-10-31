@@ -34,6 +34,8 @@ public class Calculator : MonoBehaviour {
 
 		//Handles button input values
 		switch (s) {
+                case "square root":
+                case "power":
 				case "+":
 				case "-":
 				case "/":
@@ -105,6 +107,12 @@ public class Calculator : MonoBehaviour {
 			case "/":
 				result = x / y;
 				break;
+            case "square root":
+                result = x / x;
+                break;
+            case "power":
+                result = x * x * y;
+                break;
 		}
 
 		return result;
